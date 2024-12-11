@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form id="registrationForm">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="parentName">Father/Mother Name</label>
+            <input type="text" id="parentName" name="parentName" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="class">Class</label>
+            <input type="text" id="class" name="class" required>
+
+            <label for="semester">Semester</label>
+            <select id="semester" name="semester" required>
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+                <option value="5">V</option>
+                <option value="6">VI</option>
+                <option value="7">VII</option>
+                <option value="8">VIII</option>
+            </select>
+
+            <label for="branch">Branch</label>
+            <select id="branch" name="branch" required>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="ME">ME</option>
+                <option value="CE">CE</option>
+                <option value="EE">EE</option>
+            </select>
+
+           
+
+            
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="output" class="output hidden"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="intrn.js"></script>
+</body>
+</html>
